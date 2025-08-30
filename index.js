@@ -438,6 +438,10 @@ app.get("/videos", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("🚀 Backend is running on Railway!");
+});
+
 
 const PORT = process.env.PORT || 4500;
 server.listen(PORT, "0.0.0.0", () => {
