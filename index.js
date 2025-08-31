@@ -442,6 +442,10 @@ app.get("/", (req, res) => {
   res.send("🚀 Backend is running on Railway!");
 });
 
+app.get("/ping", (req, res) => {
+  res.status(200).send("pong");
+});
+
 
 const PORT = process.env.PORT || 4500;
 server.listen(PORT, "0.0.0.0", () => {
